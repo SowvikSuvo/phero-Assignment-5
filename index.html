@@ -17,7 +17,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="hind-madurai">
-    <!-- NAV bar -->
+    <!-- Nav bar -->
     <nav class="flex justify-between max-w-[1400px] mx-auto mt-6">
       <div class="left-div flex items-center gap-2">
         <img class="w-[50px] h-[50px]" src="./assets/logo.png" alt="" />
@@ -29,21 +29,76 @@
 
       <div class="right-div flex items-center gap-5">
         <button
-          class="flex gap-2 bg-[#41ff6a33] px-6 py-2 rounded-3xl font-bold"
+          class="flex gap-2 bg-[#41ff6a33] px-8 py-3 rounded-full font-bold"
         >
           0<img class="w-7 h-7" src="./assets/heart.png" alt="" />
         </button>
 
         <button
-          class="flex gap-2 items-center bg-[#41ff6a33] px-4 py-2 rounded-3xl font-bold"
+          class="flex gap-2 items-center bg-[#41ff6a33] px-6 py-3 rounded-full font-bold"
         >
           100<img class="w-7 h-7" src="./assets/coin.png" alt="" />
         </button>
 
-        <button class="bg-[#00A63E] text-white px-7 py-3 rounded-3xl font-bold">
+        <button
+          class="bg-[#00A63E] text-white px-8 py-3 rounded-full font-bold"
+        >
           2 Copy
         </button>
       </div>
     </nav>
+
+    <!-- Header section -->
+    <header class="bg-gradient-to-r from-[#013223] to-[#006747] h-60 mt-6">
+      <div class="text-center p-8">
+        <img
+          class="mx-auto w-[92px] h-[92px]"
+          src="./assets/logo-dark.png"
+          alt=""
+        />
+        <h1 class="text-4xl text-white font-bold py-3">
+          Emergency Service Directory
+        </h1>
+        <p class="text-xl text-white font-semibold">
+          Government Emergency Services at Your Fingertip- A Project by
+          Government of the People's Republic of Bangladesh
+        </p>
+      </div>
+    </header>
+
+    <!-- card section stars here -->
+    <section class="bg-[#f5fff6]">
+      <!-- card-1 -->
+      <div
+        class="card p-8 border-gray-100 rounded-lg shadow-md  w-[430px] bg-white"
+      >
+        <div class="flex gap-[270px]">
+          <img class=" bg-[#FFE3E2] rounded-xl" src="./assets/emergency.png" alt="" />
+          <button><span class="w-6 h-6"><i class="fa-regular fa-heart"></i></span></i></button>
+        </div>
+        <div class="py-5">
+          <h2 class="text-2xl font-bold">National Emergency Number</h2>
+          <h2 class="text-lg text-gray-500">National Emergency</h2>
+        </div>
+        <p class="text-3xl font-bold">999</p>
+        <button
+          class="bg-gray-100 border-1 border-gray-200 text-gray-500 rounded-full py-1 px-4 mb-6"
+        >
+          All
+        </button>
+        <div class="flex gap-2 mt-2">
+          <button
+            class="call-btn border-1 border-gray-200 text-gray-500 px-15 py-1 rounded-lg"
+          >
+            <span><i class="fa-solid fa-copy"></i></span> Copy
+          </button>
+          <button
+            class="call-btn bg-[#00A63E] px-15 text-white py-1 rounded-lg"
+          >
+            <span><i class="fa-solid fa-phone"></i></span> Call
+          </button>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
