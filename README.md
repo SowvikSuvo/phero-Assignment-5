@@ -32,11 +32,14 @@ Answer: To create and insert a new element into the DOM, you typically use a com
 Create the Element: 
    First, use document.createElement() to create the new HTML element. You pass the tag  name of the element you want to create as a string.
       EXAMPLE:- let newDiv = document.createElement('div');
+      
 appendChild Content:
    Then, use appendChild() to add the text node to the newly created element.
       EXAMPLE:- newDiv.appendChild(newContent);
+      
 Add Attributes and Styles:
    You can set attributes and styles on the new element using standard property assignments or methods like setAttribute(). 
+   
 Insert the Element into the DOM:
    Finally, use appendChild() to insert the new element as a child of an existing element in the DOM. You first need to select the parent element.
       EXAMPLE:- let currentDiv = document.getElementById('parentDiv');
@@ -52,12 +55,6 @@ How it Works
   all the way up the DOM tree to the document object.
   At each level of the hierarchy, if a parent element has a listener for the same event type, that listener
   is also triggered. This allows a single event to be handled by multiple listeners at different levels.
-  
-  EXAMPLE:- <div id="grandparent">
-              <div id="parent">
-                <button id="child">Click me</button>
-              </div>
-            </div>
 
 ## 4. What is Event Delegation in JavaScript? Why is it useful? 
 Answer: Event delegation is a design pattern in JavaScript where you attach a single event listener 
