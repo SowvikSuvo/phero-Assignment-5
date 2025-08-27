@@ -3,21 +3,21 @@ Answer:  In JavaScript, the primary difference between getElementById, getElemen
   lies in their specificity, return value, and performance.
   
 getElementById and getElementsByClassName difference:
--> Specificity: getElementById is the most specific, as it can only select a single element based on its
-  unique id attribute.  getElementsByClassName selects all elements that have a specific class name.
--> Return Value: getElementById returns a single DOM element object. getElementsByClassName returns a
-  live HTMLCollection, which is an array-like object that automatically updates if elements with that 
-  class are added or removed from the DOM.
--> Performance: These methods are generally faster than   querySelector and querySelectorAll because 
-  they are simple, direct lookups.
+  1. Specificity: getElementById is the most specific, as it can only select a single element based on its
+    unique id attribute.  getElementsByClassName selects all elements that have a specific class name.
+  2. Return Value: getElementById returns a single DOM element object. getElementsByClassName returns a
+    live HTMLCollection, which is an array-like object that automatically updates if elements with that 
+    class are added or removed from the DOM.
+  3. Performance: These methods are generally faster than   querySelector and querySelectorAll because 
+    they are simple, direct lookups.
   
 querySelector and querySelectorAll difference:
--> Specificity: These methods are the most flexible, allowing you to select elements using any valid 
+1. Specificity: These methods are the most flexible, allowing you to select elements using any valid 
   CSS selector string, similar to how you would in a stylesheet.
--> Return Value: querySelector returns the first element that matches the specified selector, or null
+2. Return Value: querySelector returns the first element that matches the specified selector, or null
   if no match is found. querySelectorAll returns a static NodeList of all matching elements. Unlike a live
   HTMLCollection, a static NodeList, does not automatically update if the DOM changes after the selection is made.  
--> Performance: While they are powerful and convenient, querySelector and querySelectorAll can be slightly slower
+3. Performance: While they are powerful and convenient, querySelector and querySelectorAll can be slightly slower
   than the older getElementById and getElementsByClassName methods, particularly in very large DOMs, because they 
   have to parse the CSS selector string.  
 
@@ -32,10 +32,12 @@ Answer: To create and insert a new element into the DOM, you typically use a com
 Step 1: Create the Element  
 -> First, use document.createElement() to create the new HTML element. You pass the tag 
   name of the element you want to create as a string.
+  
   EXAMPLE:- let newDiv = document.createElement('div');
   
 Step 2: appendChild Content
 -> Then, use appendChild() to add the text node to the newly created element.
+
   EXAMPLE:- newDiv.appendChild(newContent);
   
 Step 3: Add Attributes and Styles
@@ -46,6 +48,7 @@ Step 3: Add Attributes and Styles
 Step 4: Insert the Element into the DOM
 -> Finally, use appendChild() to insert the new element as a child of an existing
   element in the DOM. You first need to select the parent element.
+  
   EXAMPLE:- let currentDiv = document.getElementById('parentDiv');
   
 ## 3. What is Event Bubbling and how does it work?
