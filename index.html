@@ -15,6 +15,8 @@
     />
     <!-- tailwind CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
   </head>
   <body class="hind-madurai">
     <!-- Nav bar -->
@@ -67,11 +69,12 @@
     </header>
 
     <!-- card section stars here -->
-     <div class="bg-[#f5fff6] ">
+     <div class=" bg-[#f5fff6] ">
        <section class="max-w-[1800px] mx-auto 
-        p-5  grid  md:grid-cols-3 justify-center ">
-        <!-- card-1 -->
-         <div class="  md:col-span-2  grid   md:grid-cols-3 gap-x-50 gap-y-7">
+        p-9 grid  md:grid-cols-3 justify-center ">
+        
+         <div class="  md:col-span-2  grid   md:grid-cols-3 gap-x-50 gap-y-5">
+          <!-- card-1 -->
          <div class="card  p-8 border-gray-100 rounded-lg shadow-md lg:w-[430px] bg-white"
             >
           <div class=" flex gap-[270px]">
@@ -121,12 +124,12 @@
           Police 
         </button>
         <div class="flex gap-2 mt-2">
-          <button
+          <button onclick="copyNumber('Police','999')"
             class="copy-btn border-1 border-gray-200 text-gray-500 px-15 py-1 rounded-lg"
           >
             <span><i class="fa-solid fa-copy"></i></span> Copy
           </button>
-          <button
+          <button onclick="makeCall('Police','999')"
             class="call-btn bg-[#00A63E] px-15 text-white py-1 rounded-lg"
           >
             <span><i class="fa-solid fa-phone"></i></span> Call
@@ -152,12 +155,12 @@
           Fire
         </button>
         <div class="flex gap-2 mt-2">
-          <button
+          <button onclick="copyNumber('Fire Service','999')"
             class="copy-btn border-1 border-gray-200 text-gray-500 px-15 py-1 rounded-lg"
           >
             <span><i class="fa-solid fa-copy"></i></span> Copy
           </button>
-          <button
+          <button onclick="makeCall('Fire Service','999')"
             class="call-btn bg-[#00A63E] px-15 text-white py-1 rounded-lg"
           >
             <span><i class="fa-solid fa-phone"></i></span> Call
@@ -184,12 +187,12 @@
           Health
         </button>
         <div class="flex gap-2 mt-2">
-          <button
+          <button onclick="copyNumber('Ambulance','1994-999999')"
             class="copy-btn border-1 border-gray-200 text-gray-500 px-15 py-1 rounded-lg"
           >
             <span><i class="fa-solid fa-copy"></i></span> Copy
           </button>
-          <button
+          <button onclick="makeCall('Ambulance Service','1994-999999')"
             class="call-btn bg-[#00A63E] px-15 text-white py-1 rounded-lg"
           >
             <span><i class="fa-solid fa-phone"></i></span> Call
@@ -215,12 +218,12 @@
           NGO
         </button>
         <div class="flex gap-2 mt-2">
-          <button
+          <button onclick="copyNumber('Brac','16445')"
             class="copy-btn border-1 border-gray-200 text-gray-500 px-15 py-1 rounded-lg"
           >
             <span><i class="fa-solid fa-copy"></i></span> Copy
           </button>
-          <button
+          <button onclick="makeCall('Brac Helpline','16445')"
             class="call-btn bg-[#00A63E] px-15 text-white py-1 rounded-lg"
           >
             <span><i class="fa-solid fa-phone"></i></span> Call
@@ -246,12 +249,105 @@
           Travel
         </button>
         <div class="flex gap-2 mt-2">
-          <button
+          <button  onclick="copyNumber('Bangladesh Railway','163')"
             class="copy-btn border-1 border-gray-200 text-gray-500 px-15 py-1 rounded-lg"
           >
             <span><i class="fa-solid fa-copy"></i></span> Copy
           </button>
-          <button
+          <button onclick="makeCall('Bangladesh Railway','1994-999999')"
+            class="call-btn bg-[#00A63E] px-15 text-white py-1 rounded-lg"
+          >
+            <span><i class="fa-solid fa-phone"></i></span> Call
+          </button>
+        </div>
+        </div>
+         <!-- card-7 -->
+       <div
+        class="card p-8 border-gray-100 rounded-lg shadow-md  w-[430px] bg-white "
+       >
+        <div class="flex gap-[270px]">
+          <div class="bg-[#FFE3E2] p-3 rounded-xl"><img class="w-8 h-8  " src="./assets/emergency.png" alt="" /></div>
+          <button onclick="addHeart()"><span class="text-2xl text-gray-500 "><i class="fa-regular fa-heart"></i></span></i></button>
+        </div>
+        <div class="py-5">
+          <h2 class="text-2xl font-bold">Women & Child Helpline </h2>
+          <h2 class="text-lg text-gray-500">Women & Child Helpline</h2>
+        </div>
+        <p class="text-3xl font-bold">109</p>
+        <button
+          class="bg-gray-100 border-1 border-gray-200 text-gray-500 rounded-full py-1 px-4 mb-6"
+        >
+          Help
+        </button>
+        <div class="flex gap-2 mt-2">
+          <button  onclick="copyNumber('Women & Child Helpline','109')"
+            class="copy-btn border-1 border-gray-200 text-gray-500 px-15 py-1 rounded-lg"
+          >
+            <span><i class="fa-solid fa-copy"></i></span> Copy
+          </button>
+          <button onclick="makeCall('Women & Child Helpline','109')"
+            class="call-btn bg-[#00A63E] px-15 text-white py-1 rounded-lg"
+          >
+            <span><i class="fa-solid fa-phone"></i></span> Call
+          </button>
+        </div>
+        </div>
+         <!-- card-8 -->
+       <div
+        class="card p-8 border-gray-100 rounded-lg shadow-md  w-[430px] bg-white "
+       >
+        <div class="flex gap-[270px]">
+          <div class="bg-[#FFE3E2] p-3 rounded-xl"><img class="w-8 h-8  " src="./assets/emergency.png" alt="" /></div>
+          <button onclick="addHeart()"><span class="text-2xl text-gray-500 "><i class="fa-regular fa-heart"></i></span></i></button>
+        </div>
+        <div class="py-5">
+          <h2 class="text-2xl font-bold">Anti-Corruption Helpline </h2>
+          <h2 class="text-lg text-gray-500">Anti-Corruption</h2>
+        </div>
+        <p class="text-3xl font-bold">106</p>
+        <button
+          class="bg-gray-100 border-1 border-gray-200 text-gray-500 rounded-full py-1 px-4 mb-6"
+        >
+          Govt
+        </button>
+        <div class="flex gap-2 mt-2">
+          <button  onclick="copyNumber('Anti-Corruption','106')"
+            class="copy-btn border-1 border-gray-200 text-gray-500 px-15 py-1 rounded-lg"
+          >
+            <span><i class="fa-solid fa-copy"></i></span> Copy
+          </button>
+          <button onclick="makeCall('Anti-Corruption Helpline','106')"
+            class="call-btn bg-[#00A63E] px-15 text-white py-1 rounded-lg"
+          >
+            <span><i class="fa-solid fa-phone"></i></span> Call
+          </button>
+        </div>
+        </div>
+         <!-- card-9 -->
+       <div
+        class="card p-8 border-gray-100 rounded-lg shadow-md  w-[430px] bg-white "
+       >
+        <div class="flex gap-[270px]">
+          <div class="bg-[#FFE3E2] p-3 rounded-xl"><img class="w-8 h-8  " src="./assets/emergency.png" alt="" /></div>
+          <button onclick="addHeart()"><span class="text-2xl text-gray-500 "><i class="fa-regular fa-heart"></i></span></i></button>
+        </div>
+        <div class="py-5">
+          <h2 class="text-2xl font-bold">Electricity Helpline </h2>
+          <h2 class="text-lg text-gray-500">Electricity Outage </h2>
+        </div>
+        <p class="text-3xl font-bold">16216</p>
+        <button
+          class="bg-gray-100 border-1 border-gray-200 text-gray-500 rounded-full py-1 px-4 mb-6"
+        >
+          Electricity
+        </button>
+        <div class="flex gap-2 mt-2">
+          <button  onclick="copyNumber('Electricity Outage','16216')"
+            class="copy-btn border-1 border-gray-200 text-gray-500 px-15 py-1 rounded-lg"
+          >
+            <span><i class="fa-solid fa-copy"></i></span> Copy
+          </button>
+          <button onclick="makeCall('Electricity Outage','16216')"
             class="call-btn bg-[#00A63E] px-15 text-white py-1 rounded-lg"
           >
             <span><i class="fa-solid fa-phone"></i></span> Call

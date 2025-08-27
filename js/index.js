@@ -22,7 +22,7 @@ function addHeart() {
 // call button click //
 function makeCall(serviceName, serviceNumber) {
   if (coins <= 20) {
-    alert("Not enough coins! You need al least 20 coins to make a call");
+    alert("Not enough coins! You need at least 20 coins to make a call");
     return;
   }
   //   counting coins //
