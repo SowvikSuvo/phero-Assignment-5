@@ -36,8 +36,8 @@ Step 1: Create the Element
   EXAMPLE:- let newDiv = document.createElement('div');
   
 Step 2: appendChild Content
--> Then, use appendChild() to add the text node to the newly created element.
 
+-> Then, use appendChild() to add the text node to the newly created element.
   EXAMPLE:- newDiv.appendChild(newContent);
   
 Step 3: Add Attributes and Styles
