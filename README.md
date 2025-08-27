@@ -30,20 +30,19 @@ Answer: To create and insert a new element into the DOM, you typically use a com
   three key JavaScript methods: createElement(), createTextNode(), and appendChild(). 
   
 Step 1: Create the Element  
--> First, use document.createElement() to create the new HTML element. You pass the tag  name of the element you want to create as a string.
-  EXAMPLE:- let newDiv = document.createElement('div');
+    -> First, use document.createElement() to create the new HTML element. You pass the tag  name of the element you want to create as a string.
+      EXAMPLE:- let newDiv = document.createElement('div');
   
 Step 2: appendChild Content
--> Then, use appendChild() to add the text node to the newly created element.
-EXAMPLE:- newDiv.appendChild(newContent);
+    -> Then, use appendChild() to add the text node to the newly created element.
+      EXAMPLE:- newDiv.appendChild(newContent);
   
 Step 3: Add Attributes and Styles
--> You can set attributes and styles on the new element using standard property 
-assignments or methods like setAttribute(). 
+    -> You can set attributes and styles on the new element using standard property assignments or methods like setAttribute(). 
   
 Step 4: Insert the Element into the DOM
--> Finally, use appendChild() to insert the new element as a child of an existing element in the DOM. You first need to select the parent element.
-  EXAMPLE:- let currentDiv = document.getElementById('parentDiv');
+    -> Finally, use appendChild() to insert the new element as a child of an existing element in the DOM. You first need to select the parent element.
+      EXAMPLE:- let currentDiv = document.getElementById('parentDiv');
   
 ## 3. What is Event Bubbling and how does it work?
 Answer: Event bubbling is a mechanism in the DOM (Document Object Model) that describes
