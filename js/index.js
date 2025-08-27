@@ -19,6 +19,19 @@ function addHeart() {
   updateNavbar();
 }
 
+// copy button //
+
+let copyCount = 0;
+const copyDisplay = document.getElementById("copy-count");
+
+function copyNumber(serviceName, serviceNumber) {
+  navigator.clipboard.writeText(serviceNumber).then(() => {
+    copyCount++;
+    copyDisplay.textContent = copyCount;
+    alert(`${serviceName} number ${serviceNumber}... copied`);
+  });
+}
+
 // call button click //
 function makeCall(serviceName, serviceNumber) {
   if (coins <= 20) {
@@ -37,14 +50,14 @@ function makeCall(serviceName, serviceNumber) {
 
   updateNavbar();
 }
-// render call History //
+// put up call History //
 
 function renderHistory() {
   historyList.innerHTML = "";
   history.forEach((item) => {
     const li = document.createElement("li");
     li.className =
-      "p-4  flex justify-between items-center border-1 border-gray-100 bg-gray-100 rounded-xl mt-2";
+      "p-3  flex justify-between items-center border-1 border-gray-100 bg-gray-100 rounded-xl mt-2";
     li.innerHTML = `
     <div>
     <span class='text-[18px] font-semibold'>${item.name} </br> 
@@ -62,16 +75,3 @@ function clearHistory() {
   renderHistory();
 }
 updateNavbar();
-
-// copy button //
-
-let copyCount = 0;
-const copyDisplay = document.getElementById("copy-count");
-
-function copyNumber(serviceName, serviceNumber) {
-  navigator.clipboard.writeText(serviceNumber).then(() => {
-    copyCount++;
-    copyDisplay.textContent = copyCount;
-    alert(`${serviceName} number ${serviceNumber}... copied`);
-  });
-}
