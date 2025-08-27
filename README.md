@@ -41,9 +41,7 @@ Step 2: appendChild Content
 Step 3: Add Attributes and Styles
 -> You can set attributes and styles on the new element using standard property 
   assignments or methods like setAttribute(). 
-  EXAMPLE:- newDiv.id = 'myNewDiv';
-          newDiv.style.color = 'blue';
-          newDiv.classList.add('info-box');
+  
 
 Step 4: Insert the Element into the DOM
 -> Finally, use appendChild() to insert the new element as a child of an existing
