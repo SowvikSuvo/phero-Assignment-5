@@ -29,18 +29,18 @@ querySelector and querySelectorAll difference:
 Answer: To create and insert a new element into the DOM, you typically use a combination of
   three key JavaScript methods: createElement(), createTextNode(), and appendChild(). 
   
-Create the Element: 
+Create the Element : 
    First, use document.createElement() to create the new HTML element. You pass the tag  name of the element you want to create as a string.
       EXAMPLE:- let newDiv = document.createElement('div');
       
-appendChild Content:
-   Then, use appendChild() to add the text node to the newly created element.
+appendChild Content :
+      Then, use appendChild() to add the text node to the newly created element.
       EXAMPLE:- newDiv.appendChild(newContent);
       
-Add Attributes and Styles:
-   You can set attributes and styles on the new element using standard property assignments or methods like setAttribute(). 
+Add Attributes and Styles :
+      You can set attributes and styles on the new element using standard property assignments or methods like setAttribute(). 
    
-Insert the Element into the DOM:
+Insert the Element into the DOM :
    Finally, use appendChild() to insert the new element as a child of an existing element in the DOM. You first need to select the parent element.
       EXAMPLE:- let currentDiv = document.getElementById('parentDiv');
   
