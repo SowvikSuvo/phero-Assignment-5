@@ -34,7 +34,7 @@ function copyNumber(serviceName, serviceNumber) {
 
 // call button click //
 function makeCall(serviceName, serviceNumber) {
-  if (coins <= 20) {
+  if (coins < 20) {
     alert("Not enough coins! You need at least 20 coins to make a call");
     return;
   }
